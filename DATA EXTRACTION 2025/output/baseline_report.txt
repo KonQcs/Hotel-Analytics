@@ -1,0 +1,63 @@
+Bookings shape: (15000, 22)
+Occupancy shape: (10999, 7)
+Bookings null ratio (top 10):
+cancel_date       0.791933
+booking_id        0.000000
+room_id           0.000000
+created_at        0.000000
+checkin_date      0.000000
+hotel_id          0.000000
+checkout_date     0.000000
+lead_time_days    0.000000
+num_guests        0.000000
+length_of_stay    0.000000
+dtype: float64
+Occupancy null ratio (top 10):
+hotel_id          0.0
+date              0.0
+occupied_rooms    0.0
+capacity_rooms    0.0
+occupancy_rate    0.0
+dow               0.0
+holiday_flag      0.0
+dtype: float64
+Overall cancellation rate: 20.81%
+Cancellation rate by channel:
+channel
+Corporate      0.219972
+OTA-Expedia    0.219063
+OTA-Booking    0.210717
+Direct         0.196852
+Phone          0.192568
+Name: is_cancelled, dtype: float64
+Price per night stats:
+count    15000.000000
+mean        89.615864
+std         24.842323
+min         43.870000
+25%         71.730000
+50%         86.220000
+75%        107.300000
+max        166.450000
+Name: price_per_night, dtype: float64
+
+== Cancellation Model (Logistic Regression) ==
+ROC-AUC: 0.708
+PR-AUC : 0.377
+Confusion matrix (thr=0.5):
+[[5722  132]
+ [1565  115]]
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.79      0.98      0.87      5854
+           1       0.47      0.07      0.12      1680
+
+    accuracy                           0.77      7534
+   macro avg       0.63      0.52      0.50      7534
+weighted avg       0.71      0.77      0.70      7534
+
+
+== Occupancy Forecast (RandomForestRegressor) ==
+MAE: 0.0238
+sMAPE: 0.2153
