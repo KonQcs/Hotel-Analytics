@@ -1,5 +1,5 @@
 
-<img width="620" height="620" alt="UTH-logo-english" src="https://github.com/user-attachments/assets/95fca9d1-b9fa-45e9-bd1c-0cee2d61f6d4" />
+<img width="155" height="155" alt="UTH-logo-english" src="https://github.com/user-attachments/assets/95fca9d1-b9fa-45e9-bd1c-0cee2d61f6d4" />
 
 # Hotel Analytics — Cancellation Risk & Short-Term Occupancy (2024–2025)
 
