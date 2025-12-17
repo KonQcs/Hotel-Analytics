@@ -6,7 +6,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 
-# Βάλε το script στον ίδιο φάκελο με το CSV ή όρισε paths παρακάτω
 BASE = Path(__file__).resolve().parent
 CSV = BASE / "occupancy_predictions_sample.csv"
 
@@ -44,3 +43,4 @@ with PdfPages(PDF) as pdf:
 
 print(f"[OK] PNG charts: {OUT_DIR}")
 print(f"[OK] Multi-page PDF: {PDF}")
+
